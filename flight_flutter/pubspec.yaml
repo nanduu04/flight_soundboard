@@ -46,6 +46,8 @@ flutter:
     - assets/images/1.png
     - assets/images/2.jpg
     - assets/images/3.jpeg
+    - assets/images/4.jpg
+    - assets/images/5.jpeg
     - assets/sounds/deamon.mp3
     - assets/sounds/dolphin.mp3
     - assets/sounds/dunklios.mp3
@@ -54,6 +56,7 @@ flutter:
     - assets/sounds/lookAtCurry.mp3
     - assets/sounds/nice.mp3
     - assets/sounds/roast2.mp3
+    - assets/sounds/wontletyou.mp3
 
 
 

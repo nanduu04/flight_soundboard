@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Flight Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.red,
         fontFamily: 'FredokaOne',
       ),
-      home: MyHomePage(title: 'Flights Soundboard'),
+      home: MyHomePage(title: 'Flight Reacts Soundboard'),
     );
   }
 }
@@ -35,11 +35,14 @@ class _MyHomePageState extends State<MyHomePage> {
   /// Flight's Faces
   List<String> _headshots = [
     'assets/images/1.png',
-    'assets/images/2.jpg',
-    'assets/images/3.jpeg',
-    'assets/images/1.png',
-    'assets/images/2.jpg',
-    'assets/images/3.jpeg',
+     'assets/images/1.png',
+      'assets/images/1.png',
+       'assets/images/1.png',
+        'assets/images/1.png',
+    // 'assets/images/2.jpg',
+    // 'assets/images/3.jpeg',
+    // 'assets/images/4.jpg',
+    // 'assets/images/5.jpeg',
   ];
 
   /// Flight's sounds
@@ -73,7 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text('FTC'),
           GridView.builder(
             shrinkWrap: true,
             itemCount: 15,
@@ -91,8 +93,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   curve: Curves.bounceOut,
                   decoration: BoxDecoration(
                     color: indexIsPlaying == index
-                        ? Colors.white
-                        : Colors.yellow[500],
+                        ? Colors.red
+                        : Colors.black,
                     borderRadius: new BorderRadius.circular(100.0),
                     image: new DecorationImage(
                       image: new AssetImage(_headshots[index % 5]),
@@ -100,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     border: new Border.all(
                         color: indexIsPlaying == index
-                            ? Colors.yellow
+                            ? Colors.black
                             : Colors.transparent,
                         width: 2.0,
                         style: BorderStyle.solid),
@@ -113,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                   child: Align(
-                    alignment: Alignment.bottomRight,
+                    alignment: Alignment.bottomLeft,
                     child: Text('${index + 1}'),
                   ),
                 ),
